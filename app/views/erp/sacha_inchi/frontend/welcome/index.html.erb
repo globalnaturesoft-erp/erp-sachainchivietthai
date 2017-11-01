@@ -1,0 +1,120 @@
+<div class="page-wraper">
+    <!-- Content -->
+    <div id="particles-js" class="overlay-black-middle bg-img-fix dez-coming-soon" style="background-image:url(/sacha_inchi/welcome/images/bg1.jpg);">
+        <div class="container-fluid " id="mySidenav">
+            <!-- Coming Soon -->
+            <div class="row">
+                <div class="two-box col-md-6">
+                    <div class="dez-coming-bx left-bar text-center " id="myNavbar">
+                        <div class="dez-coming-bx text-center">
+                            <div class="top-head text-center logo-header">
+                                <a href="<%= erp_sacha_inchi.root_path %>">
+                                    <img src="/sacha_inchi/welcome/images/logo.png" />
+                                </a>
+                            </div>		
+                            <div class="coming-soon-content text-center text-white m-b30">
+                                <h2>WEBSITE ĐANG ĐƯỢC PHÁT TRIỂN</h2>
+                                <p>Website Sacha Inchi Việt Thái Đang Được Xây Dựng. Quý Khách Hàng Vui Lòng Quay Lại Sau.</p>
+                            </div>
+                            <div class="countdown text-center">
+                                <div class="date"><span class="days text-primary"></span>
+                                    <text>Ngày</text>
+                                </div>
+                                <div class="date"><span class="hours text-primary"></span>
+                                    <text>Giờ</text>
+                                </div>
+                                <div class="date"><span class="mins text-primary"></span>
+                                    <text>Phút</text>
+                                </div>
+                                <div class="date"><span class="secs text-primary"></span>
+                                    <text>Giây</text>
+                                </div>
+                            </div>
+                            <div class="text-center m-t50">
+                                <div class="m-b30">
+                                    <ul class="dez-social-icon border">
+                                        <li><a class="fa fa-facebook" href="javascript:void(0);"></a></li>
+                                        <li><a class="fa fa-twitter" href="javascript:void(0);"></a></li>
+                                        <li><a class="fa fa-google-plus" href="javascript:void(0);"></a></li>
+                                        <li><a class="fa fa-youtube" href="javascript:void(0);"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	   
+                </div>
+                <div class="col-md-6 coming-side-bar content overlay-white-dark p-a0">
+                    <div class="relative z-index2">
+                        <div class="clearfix"></div>
+                        <!-- About us -->
+                        <div class="" id="section1">
+                            <div class="p-a30 p-t15 text-center">
+                                <h2>GIỚI THIỆU</h2>
+                                <div class="dez-separator bg-primary "></div>
+                                <p class="m-auto">SACHI OMEGA 3.6.9 SIÊU THỰC PHẨM ĐẾN TỪ NAM MỸ</p>
+                            </div>	
+                            <div class="clearfix">
+                                <% (0..15).each_with_index do |image, index| %>
+                                <% index = index+1 %>
+                                <div class="col-md-6 p-a0">
+                                    <div class="dez-media off-color dez-img-effect ">
+                                        <a class="fancybox-button" rel="fancybox-button" href="/sacha_inchi/welcome/images/profile/large/<%= index.to_s %>.jpg">
+                                            <img src="/sacha_inchi/welcome/images/profile/small/<%= index.to_s %>-small.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <% end %>
+                            </div>
+                            <div class="clearfix p-tb20 p-lr15">
+                                <div class="col-md-12 text-justify">
+                                    <p>
+                                        Sacha Inchi *(Plukenetia volubilis L) hay còn được gọi là Peanut Inca, Inca Inchi, Inca nuts là loại thực vật họ Euphorbiaceae (Thầu dầu) có nguồn gốc từ vùng rừng Amazon gồm 19 loài, phân bố từ Bolivia tới Mexico, phổ biến nhất trong các khu vực Amazon của Peru, Ecuador và Colombia. Trong đó, 12 loài phân bố chủ yếu ở Nam và Trung Mỹ, 7 loài còn lại phân bố ở các khu vực khác trên thế giới.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact Us -->
+                        <div class="bg-white" id="section2">
+                            <div class="p-a30 p-t15 text-center">
+                                <h2>THÔNG TIN LIÊN HỆ</h2>
+                                <div class="dez-separator bg-primary "></div>
+                                <p class="m-auto">CÔNG TY CỔ PHẦN SACHA - INCHI VIỆT THÁI</p>
+                            </div>
+                            <div class="p-lr15 clearfix">
+                                <div class="col-md-4 col-sm-4 m-b30">
+                                    <div class="icon-bx-wraper bx-style-1 p-a30 center col">
+                                        <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-phone"></i></a> </div>
+                                        <div class="icon-content">
+                                            <h5>Điện thoại</h5>
+                                            <p>+91 564 548 4854</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 m-b30">
+                                    <div class="icon-bx-wraper bx-style-1 p-a30 center col">
+                                        <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-envelope"></i></a> </div>
+                                        <div class="icon-content">
+                                            <h6>Địa chỉ email</h6>
+                                            <p><%= mail_to "sachainchivietthai@gmail.com", "sachainchivietthai" %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4  m-b30">
+                                    <div class="icon-bx-wraper bx-style-1 p-a30 center col">
+                                        <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-map-marker"></i></a> </div>
+                                        <div class="icon-content">
+                                            <h5>Địa chỉ</h5>
+                                            <p>Tầng 2 - 242 Quốc lộ 9 - Thành Phố Đông Hà - Quảng Trị</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coming Soon  -->
+            </div>
+        </div>
+    </div>
+    <!-- Content END-->
+</div>
